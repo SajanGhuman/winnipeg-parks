@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Patrick+Hand+SC&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"
+      defer
+    ></script>
+    <script
+      src="https://www.greensock.com/js/src/utils/SplitText.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Parks</title>
+  </head>
+  <body id="scroll-container">
+    <div class="main-nav">
+      <nav>
+        <div class="title-div">
+          <h1 class="title">WINNPEG PARKS</h1>
+        </div>
+        <div class="container glass">
+          <p class="l-title">Search Parks</p>
+          <form id="form" name="form" action="#" method="POST">
+            <input type="text" id="name" class="search" name="name" />
+            <label class="labelline" for="name">Enter Park Name</label>
+            <input type="text" id="location" class="search-1" name="name" />
+            <label class="labelline-1" for="location"
+              >Enter Park Location</label
+            >
+            <button class="btn btn-light sub-button" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <main id="scroll__view" class="table">
+      <div id="reveal" class="table__div">
+        <section class="table__header">
+          <h1 id="table__h1">Parks Found(0)</h1>
+        </section>
+
+        <section class="table__body">
+          <table id="table1">
+            <thead>
+              <tr>
+                <th>Park ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Category</th>
+                <th>Area(In Hectares)</th>
+                <th>Coordinates</th>
+              </tr>
+            </thead>
+
+            <tbody id="t__body"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
